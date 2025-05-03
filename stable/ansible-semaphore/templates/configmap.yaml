@@ -46,3 +46,9 @@ data:
     {{ . }}
     {{- end }}
   {{- end }}
+  
+  ssh-config: |
+    Host github.com
+      User git
+      IdentityFile ~/.ssh/id_rsa
+      StrictHostKeyChecking no
